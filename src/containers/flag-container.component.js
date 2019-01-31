@@ -5,7 +5,6 @@ import { getCountries, searchCountries, deleteCountry } from '../actions/actions
 import '../country.css';
 
 class CountryFlagContainer extends Component {
-   
     componentDidMount() {
         this.props.dispatch(getCountries());
         this.props.dispatch(searchCountries(''));
